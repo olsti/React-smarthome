@@ -6,6 +6,7 @@ import './App.css';
 import Button from './components/Button.js';
 import Switch from './components/Switch';
 import Switchround from './components/Switchround';
+import Switchsimple from './components/Switchsimple';
 
 const App = () => {
   const [isOn1, setTurnOn1] = useState(false);
@@ -19,7 +20,7 @@ const App = () => {
         <h1>{(isOn1) ? "ON" : "OFF"}</h1>
         <Switchround isOn={isOn2} turnOn={() => setTurnOn2(!isOn2)}/>
         <h1>{(isOn2) ? "ON" : "OFF"}</h1>
-        <Switchround isOn={isOn3} turnOn={() => setTurnOn3(!isOn3)}/>
+        <Switchsimple isOn={isOn3} turnOn={() => setTurnOn3(!isOn3)}/>
         <h1>{(isOn3) ? "ON" : "OFF"}</h1>
       </header>
     </div>
