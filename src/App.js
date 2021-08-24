@@ -17,7 +17,41 @@ const App = () => {
   return (
     <div className="App">
       <div className="smarthome">
+      <div className="container left">
         <div className="container topleft">
+          <div className="sliderbox">
+            <div className="sliderbox_upper">
+            </div>
+
+            <div class="sliderbox_under">
+
+              <div class="box red">
+              <Switchsimple className = "switch1" isOn={isOn3} turnOn={() => setTurnOn3(!isOn3)}/>
+              </div>
+              <div class="box blue">
+              <Switchsimple className = "switch1" isOn={isOn3} turnOn={() => setTurnOn3(!isOn3)}/>
+              </div>
+              <div class="box green">
+              <Switchsimple className = "switch1" isOn={isOn3} turnOn={() => setTurnOn3(!isOn3)}/>
+              </div>
+              <div class="box violet">
+              <Switchsimple className = "switch1" isOn={isOn3} turnOn={() => setTurnOn3(!isOn3)}/>
+              </div>
+              <div class="box orange">
+              <Switchsimple className = "switch1" isOn={isOn3} turnOn={() => setTurnOn3(!isOn3)}/>
+              </div>
+              <div class="box yellow">
+              <Switchsimple className = "switch1" isOn={isOn3} turnOn={() => setTurnOn3(!isOn3)}/>
+              </div>
+              <div class="box tur">
+              <Switchsimple className = "switch1" isOn={isOn3} turnOn={() => setTurnOn3(!isOn3)}/>
+              </div>
+
+            </div>
+          </div>
+
+        </div>
+      <div className="container bottomleft">
           <div className="sliderbox">
             <div className="sliderbox_upper">
             </div>
@@ -48,7 +82,7 @@ const App = () => {
               
             </div>
           </div>
-
+          </div>
         </div>
       </div>
     </div>
