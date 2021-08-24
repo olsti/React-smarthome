@@ -1,38 +1,72 @@
 .App {
-  text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+/* background-color: #282c34; */
+
+body {
+  background-repeat: repeat;
+  background: url(./figma_template.png) no-repeat center fixed;
+  background-size: auto 100%;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.smarthome {
+  position: absolute;
+  left: 10%;
+  height: 95%;
+  width: 80%;
   display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  border-radius: 5px;
+  outline: solid 1px green;
+  /* background-color: #282c34; */
+  background-color: #282c3496;
 }
 
-.App-link {
-  color: #61dafb;
+.container.topleft {
+  padding-left: 50px;
+  padding-top: 30px;
+  height: 45%;
+  width: 50%;
+  /* outline: solid 3px greenyellow; */
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.sliderbox {
+  width: 100%;
+  height: 100%;
+  background-color: rgb(150, 150, 150);
+  border-radius: 5px;
+}
+
+.sliderbox_upper {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  height: 85%;
+  width: 100%;
+
+  /* outline: solid 3px cornflowerblue; */
+  box-sizing: border-box;
+  /* background-color: mistyrose; */
+}
+
+.sliderbox_under {
+  height: 10%;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  /* outline: solid 3px coral; */
+  box-sizing: border-box;
+  font-family: sans-serif;
+  /* background-color: mistyrose; */
+}
+.box {
+  /* color: #fff; */
+  /* text-shadow: 4px 4px 0 rgba(0, 0, 0, 0.1); */
+  /* text-align: center; */
+  /* font-size: 10px; */
+  box-sizing: border-box;
+  justify-content: space-around;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  /* outline: solid 3px blue; */
 }
