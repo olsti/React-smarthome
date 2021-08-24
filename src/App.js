@@ -16,72 +16,96 @@ const App = () => {
   return (
     <div className="App">
       <div className="smarthome">
-      <div className="container left">
-        <div className="container topleft">
-          <div className="sliderbox">
-            <div className="sliderbox_upper">
+        <div className="container left">
+          <div className="container topleft">
+            <div className="sliderbox">
+              <div className="sliderbox_upper">
+              </div>
+
+              <div className="sliderbox_under">
+
+                <div className="box red">
+                <Switchsimple className = "switch1" isOn={isOn3} turnOn={() => setTurnOn3(!isOn3)}/>
+                </div>
+                <div className="box blue">
+                <Switchsimple className = "switch1" isOn={isOn3} turnOn={() => setTurnOn3(!isOn3)}/>
+                </div>
+                <div className="box green">
+                <Switchsimple className = "switch1" isOn={isOn3} turnOn={() => setTurnOn3(!isOn3)}/>
+                </div>
+                <div className="box violet">
+                <Switchsimple className = "switch1" isOn={isOn3} turnOn={() => setTurnOn3(!isOn3)}/>
+                </div>
+                <div className="box orange">
+                <Switchsimple className = "switch1" isOn={isOn3} turnOn={() => setTurnOn3(!isOn3)}/>
+                </div>
+                <div className="box yellow">
+                <Switchsimple className = "switch1" isOn={isOn3} turnOn={() => setTurnOn3(!isOn3)}/>
+                </div>
+                <div className="box tur">
+                <Switchsimple className = "switch1" isOn={isOn3} turnOn={() => setTurnOn3(!isOn3)}/>
+                </div>
+
+              </div>
             </div>
 
-            <div class="sliderbox_under">
-
-              <div class="box red">
-              <Switchsimple className = "switch1" isOn={isOn3} turnOn={() => setTurnOn3(!isOn3)}/>
-              </div>
-              <div class="box blue">
-              <Switchsimple className = "switch1" isOn={isOn3} turnOn={() => setTurnOn3(!isOn3)}/>
-              </div>
-              <div class="box green">
-              <Switchsimple className = "switch1" isOn={isOn3} turnOn={() => setTurnOn3(!isOn3)}/>
-              </div>
-              <div class="box violet">
-              <Switchsimple className = "switch1" isOn={isOn3} turnOn={() => setTurnOn3(!isOn3)}/>
-              </div>
-              <div class="box orange">
-              <Switchsimple className = "switch1" isOn={isOn3} turnOn={() => setTurnOn3(!isOn3)}/>
-              </div>
-              <div class="box yellow">
-              <Switchsimple className = "switch1" isOn={isOn3} turnOn={() => setTurnOn3(!isOn3)}/>
-              </div>
-              <div class="box tur">
-              <Switchsimple className = "switch1" isOn={isOn3} turnOn={() => setTurnOn3(!isOn3)}/>
-              </div>
-
-            </div>
           </div>
-
-        </div>
-      <div className="container bottomleft">
+        <div className="container bottomleft">
           <div className="sliderbox">
             <div className="sliderbox_upper">
             </div>
 
-            <div class="sliderbox_under">
+            <div className="sliderbox_under">
 
-              <div class="box red">
+              <div className="box red">
               <Switchsimple className = "switch1" isOn={isOn3} turnOn={() => setTurnOn3(!isOn3)}/>
               </div>
-              <div class="box blue">
+              <div className="box blue">
               <Switchsimple className = "switch1" isOn={isOn3} turnOn={() => setTurnOn3(!isOn3)}/>
               </div>
-              <div class="box green">
+              <div className="box green">
               <Switchsimple className = "switch1" isOn={isOn3} turnOn={() => setTurnOn3(!isOn3)}/>
               </div>
-              <div class="box violet">
+              <div className="box violet">
               <Switchsimple className = "switch1" isOn={isOn3} turnOn={() => setTurnOn3(!isOn3)}/>
               </div>
-              <div class="box orange">
+              <div className="box orange">
               <Switchsimple className = "switch1" isOn={isOn3} turnOn={() => setTurnOn3(!isOn3)}/>
               </div>
-              <div class="box yellow">
+              <div className="box yellow">
               <Switchsimple className = "switch1" isOn={isOn3} turnOn={() => setTurnOn3(!isOn3)}/>
               </div>
-              <div class="box tur">
+              <div className="box tur">
               <Switchsimple className = "switch1" isOn={isOn3} turnOn={() => setTurnOn3(!isOn3)}/>
               </div>
               
             </div>
           </div>
           </div>
+        </div>
+        <div className="header"><h1>LIFESTYLE LIVING</h1></div>
+        <div className="container right">
+            <div className="box 1">
+                <div className="box 11">
+                <Switchround className = "switch1" isOn={isOn3} turnOn={() => setTurnOn3(!isOn3)}/>
+                </div>
+                <div className="box 12">
+                <Switchround className = "switch1" isOn={isOn3} turnOn={() => setTurnOn3(!isOn3)}/>
+                </div>
+                <div className="box 13">
+                <Switchround className = "switch1" isOn={isOn3} turnOn={() => setTurnOn3(!isOn3)}/>
+                </div>
+            </div>
+            <div className="box 2">
+                <Switchround className = "switch1" isOn={isOn3} turnOn={() => setTurnOn3(!isOn3)}/>
+                <Switchround className = "switch1" isOn={isOn3} turnOn={() => setTurnOn3(!isOn3)}/>
+                <Switchround className = "switch1" isOn={isOn3} turnOn={() => setTurnOn3(!isOn3)}/>
+            </div>
+            <div className="box 3">
+                <Switchround className = "switch1" isOn={isOn3} turnOn={() => setTurnOn3(!isOn3)}/>
+                <Switchround className = "switch1" isOn={isOn3} turnOn={() => setTurnOn3(!isOn3)}/>
+                <Switchround className = "switch1" isOn={isOn3} turnOn={() => setTurnOn3(!isOn3)}/>
+            </div>
         </div>
       </div>
     </div>
