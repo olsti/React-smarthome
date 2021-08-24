@@ -11,9 +11,10 @@ body {
 
 .smarthome {
   position: absolute;
+  top: 5%;
   left: 10%;
-  height: 95%;
-  width: 80%;
+  height: 620px;
+  width: 1150px;
   display: flex;
   border-radius: 5px;
   outline: solid 1px green;
@@ -23,26 +24,29 @@ body {
 
 .container.left {
   /* outline: solid 3px greenyellow; */
-  width: 50%;
+  position: relative;
+  top: 40px;
+  left: 60px;
+  height: 530px;
+  width: 510px;
+  outline: solid 3px blue;
 }
 
 .container.topleft {
-  padding-left: 50px;
-  padding-top: 30px;
-  height: 45%;
-  width: 100%;
-  padding-bottom: 20px;
-  /* outline: solid 3px blue; */
+  position: relative;
+  height: 250px;
+  width: 510px;
+  padding-bottom: 40px;
+  outline: solid 3px blue;
 }
 
 .container.bottomleft {
-  padding-left: 50px;
-  padding-bottom: 30px;
-  height: 45%;
-  width: 100%;
+  position: relative;
+  height: 250px;
+  width: 510px;
   display: flex;
   flex-direction: column;
-  /* outline: solid 3px red; */
+  outline: solid 3px red;
 }
 
 .sliderbox {
@@ -59,9 +63,8 @@ body {
   height: 85%;
   width: 100%;
 
-  /* outline: solid 3px cornflowerblue; */
+  outline: solid 3px cornflowerblue;
   box-sizing: border-box;
-  /* background-color: mistyrose; */
 }
 
 .sliderbox_under {
