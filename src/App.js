@@ -1,5 +1,4 @@
 import React, {useState} from 'react';
-import logo from './logo.svg';
 import ic_sun from './images/weather/ic_sun.svg';
 import ic_half_sun from './images/weather/ic_half_sun.svg';
 import ic_snow from './images/weather/ic_snow.svg';
@@ -17,11 +16,11 @@ import slider_todo from './images/slider2.svg';
 import Weather from './components/Weather.js';
 import './App.css';
 
-import Button from './components/Button.js';
-import Switch from './components/Switch';
+// import Button from './components/Button.js';
+// import Switch from './components/Switch';
 import Switchround from './components/Switchround';
 import Switchsimple from './components/Switchsimple';
-import TemplatePicture from './TemplatePicture';
+// import TemplatePicture from './TemplatePicture';
 
 const App = () => {
   const [isOn1, setTurnOn1] = useState(false);

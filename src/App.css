@@ -107,15 +107,14 @@ body {
 .sliderbox {
   height: 210px;
   width: 560px;
-  /* background-color: rgb(150, 150, 150); */
   border-radius: 5px;
 }
 
 .sliderbox_upper {
   display: grid;
   grid-template-columns: repeat(7, 1fr);
-  /* outline: solid 3px cornflowerblue; */
   box-sizing: border-box;
+  /* outline: solid 3px cornflowerblue; */
 }
 
 .slider_todo {
@@ -145,7 +144,6 @@ body {
   grid-template-rows: 1fr 5fr;
   color: #fff;
   text-shadow: 4px 4px 0 rgba(0, 0, 0, 0.1);
-  /* text-align: center; */
   font-size: 14px;
   text-align: center;
   box-sizing: border-box;
@@ -175,17 +173,16 @@ body {
 
 .weather {
   display: grid;
-  /* outline: dotted 2px blue; */
-  /* overflow: hidden; */
   align-items: center;
   justify-content: space-evenly;
+  /* outline: dotted 2px blue; */
 }
 
 .temperature {
   display: grid;
-  /* outline: dotted 2px blue; */
   align-items: center;
   justify-content: space-evenly;
+  /* outline: dotted 2px blue; */
 }
 
 .daytext {
@@ -194,7 +191,6 @@ body {
   align-items: center;
   color: #fff;
   text-shadow: 4px 4px 0 rgba(0, 0, 0, 0.1);
-  /* text-align: center; */
   font-size: 14px;
   text-align: center;
   font-family: fantasy;
