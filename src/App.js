@@ -13,6 +13,7 @@ import temp_3 from './images/weather/ic_thermometer_3.svg';
 import temp_4 from './images/weather/ic_thermometer_4.svg';
 import temp_5 from './images/weather/ic_thermometer_5.svg';
 import temp_6 from './images/weather/ic_thermometer_6.svg';
+import slider_todo from './images/slider2.svg';
 import Weather from './components/Weather.js';
 import './App.css';
 
@@ -27,22 +28,32 @@ const App = () => {
   const [isOn2, setTurnOn2] = useState(false);
   const [isOn3, setTurnOn3] = useState(false);
   const [isOn4, setTurnOn4] = useState(false);
+  const [isOn5, setTurnOn5] = useState(false);
+  const [isOn6, setTurnOn6] = useState(false);
+  const [isOn7, setTurnOn7] = useState(false);
   return (
     <div className="App">
       <div className="smarthome">
         <div className="grid left">
           <div className="grid topleft">
               <div className="sliderbox_upper">
+                <img src={slider_todo} className="slider_todo" alt="slider_todo" />
+                <img src={slider_todo} className="slider_todo" alt="slider_todo" />
+                <img src={slider_todo} className="slider_todo" alt="slider_todo" />
+                <img src={slider_todo} className="slider_todo" alt="slider_todo" />
+                <img src={slider_todo} className="slider_todo" alt="slider_todo" />
+                <img src={slider_todo} className="slider_todo" alt="slider_todo" />
+                <img src={slider_todo} className="slider_todo" alt="slider_todo" />
               </div>
 
               <div className="sliderbox_under">
+                <Switchsimple className = "switchsimple" isOn={isOn1} turnOn={() => setTurnOn1(!isOn1)}/>
+                <Switchsimple className = "switchsimple" isOn={isOn2} turnOn={() => setTurnOn2(!isOn2)}/>
                 <Switchsimple className = "switchsimple" isOn={isOn3} turnOn={() => setTurnOn3(!isOn3)}/>
-                <Switchsimple className = "switchsimple" isOn={isOn3} turnOn={() => setTurnOn3(!isOn3)}/>
-                <Switchsimple className = "switchsimple" isOn={isOn3} turnOn={() => setTurnOn3(!isOn3)}/>
-                <Switchsimple className = "switchsimple" isOn={isOn3} turnOn={() => setTurnOn3(!isOn3)}/>
-                <Switchsimple className = "switchsimple" isOn={isOn3} turnOn={() => setTurnOn3(!isOn3)}/>
-                <Switchsimple className = "switchsimple" isOn={isOn3} turnOn={() => setTurnOn3(!isOn3)}/>
-                <Switchsimple className = "switchsimple" isOn={isOn3} turnOn={() => setTurnOn3(!isOn3)}/>
+                <Switchsimple className = "switchsimple" isOn={isOn4} turnOn={() => setTurnOn4(!isOn4)}/>
+                <Switchsimple className = "switchsimple" isOn={isOn5} turnOn={() => setTurnOn5(!isOn5)}/>
+                <Switchsimple className = "switchsimple" isOn={isOn6} turnOn={() => setTurnOn6(!isOn6)}/>
+                <Switchsimple className = "switchsimple" isOn={isOn7} turnOn={() => setTurnOn7(!isOn7)}/>
               </div>
           </div>
         <div className="grid bottomleft">
@@ -74,28 +85,16 @@ const App = () => {
           </div>
           </div>
         <div className="grid right">
-                <div className="header"><h1>SMARTHOME</h1></div>
-            <div className="box 1">
-                <div className="box 11">
-                <Switchround className = "switch1" isOn={isOn3} turnOn={() => setTurnOn3(!isOn3)}/>
-                </div>
-                <div className="box 12">
-                <Switchround className = "switch1" isOn={isOn3} turnOn={() => setTurnOn3(!isOn3)}/>
-                </div>
-                <div className="box 13">
-                <Switchround className = "switch1" isOn={isOn3} turnOn={() => setTurnOn3(!isOn3)}/>
-                </div>
-            </div>
-            <div className="box 2">
-                <Switchround className = "switch1" isOn={isOn3} turnOn={() => setTurnOn3(!isOn3)}/>
-                <Switchround className = "switch1" isOn={isOn3} turnOn={() => setTurnOn3(!isOn3)}/>
-                <Switchround className = "switch1" isOn={isOn3} turnOn={() => setTurnOn3(!isOn3)}/>
-            </div>
-            <div className="box 3">
-                <Switchround className = "switch1" isOn={isOn3} turnOn={() => setTurnOn3(!isOn3)}/>
-                <Switchround className = "switch1" isOn={isOn3} turnOn={() => setTurnOn3(!isOn3)}/>
-                <Switchround className = "switch1" isOn={isOn3} turnOn={() => setTurnOn3(!isOn3)}/>
-            </div>
+              <div className="header"><h1>SMARTHOME</h1></div>
+              <div className="buttonbox">
+                <div><Switchround className = "switch" isOn={isOn1} turnOn={() => setTurnOn1(!isOn1)}/></div>Livingroom
+                <div><Switchround className = "switch" isOn={isOn2} turnOn={() => setTurnOn2(!isOn2)}/></div>Sleepingroom
+                <div><Switchround className = "switch" isOn={isOn3} turnOn={() => setTurnOn3(!isOn3)}/></div>Bathroom
+                <div><Switchround className = "switch" isOn={isOn4} turnOn={() => setTurnOn4(!isOn4)}/></div>Kitchen
+                <div><Switchround className = "switch" isOn={isOn5} turnOn={() => setTurnOn5(!isOn5)}/></div>Floor
+                <div><Switchround className = "switch" isOn={isOn6} turnOn={() => setTurnOn6(!isOn6)}/></div>Stairs
+                <div><Switchround className = "switch" isOn={isOn7} turnOn={() => setTurnOn7(!isOn7)}/></div>Children
+              </div>
         </div>
       </div>
     </div>
