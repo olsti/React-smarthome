@@ -6,7 +6,7 @@ export default class Button extends Component {
         this.state = {
             isON: false
         };
-       // this.handleClick = this.handleClick.bind(this);
+       this.handleClick = this.handleClick.bind(this);
     }
 
     handleClick = () => {
