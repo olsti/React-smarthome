@@ -7,9 +7,10 @@
   color: #fff;
   text-shadow: 4px 4px 0 rgba(0, 0, 0, 0.1);
   align-items: center;
-  padding-left: 10px;
-  padding-right: 10px;
-  padding-bottom: 10px;
-  padding-top: 10px;
+  justify-content: center;
+  /* padding-left: 10px; */
+  /* padding-right: 10px; */
+  /* padding-bottom: 10px; */
+  /* padding-top: 10px; */
   /* outline: solid 3px blue; */
 }

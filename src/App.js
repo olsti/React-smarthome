@@ -85,8 +85,8 @@ const App = () => {
           </div>
           </div>
         <div className="grid right">
-              <div className="header"><h1>SMARTHOME</h1></div>
-              <div className="grid bottomright">
+              <div className="header">SMARTHOME</div>
+              <div className="bottomright">
                 <Buttonbox isOn={isOn1} turnOn={() => setTurnOn1(!isOn1)} text = "Livingroom" />
                 <Buttonbox isOn={isOn2} turnOn={() => setTurnOn2(!isOn2)} text = "Sleepingroom" />
                 <Buttonbox isOn={isOn3} turnOn={() => setTurnOn3(!isOn3)} text = "Bathroom" />
