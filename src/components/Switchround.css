@@ -1,6 +1,8 @@
 .switchround {
   position: relative;
   display: inline-block;
+  align-self: center;
+  justify-self: center;
   width: 60px;
   height: 30px;
   border-radius: 30px;

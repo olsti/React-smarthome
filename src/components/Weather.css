@@ -1,0 +1,62 @@
+.weather {
+  display: grid;
+  align-self: center;
+  justify-content: space-evenly;
+  /* outline: dotted 2px blue; */
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .weather {
+    animation: weather-pulse infinite 1s linear;
+  }
+}
+
+@keyframes weather-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+@keyframes weather-show {
+  from {
+    opacity: 1;
+    transform: trans(0deg);
+    transform: translateX(-10px);
+    transition: opacity 500ms ease-in;
+  }
+  to {
+    opacity: 0.5;
+    transform: translateX(10px);
+    transition: opacity 500ms ease-out;
+  }
+}
+
+@keyframes weather-pulse {
+  0% {
+    transform: scale(0.95);
+    /* box-shadow: 0 0 0 0 rgba(0, 0, 0, 0.7); */
+  }
+
+  30% {
+    transform: scale(1);
+    /* box-shadow: 0 0 0 10px rgba(0, 0, 0, 0); */
+  }
+
+  50% {
+    transform: scale(1.1);
+    /* box-shadow: 0 0 0 10px rgba(0, 0, 0, 0); */
+  }
+
+  60% {
+    transform: scale(1.1);
+    /* box-shadow: 0 0 0 10px rgba(0, 0, 0, 0); */
+  }
+
+  100% {
+    transform: scale(0.95);
+    /* box-shadow: 0 0 0 0 rgba(0, 0, 0, 0); */
+  }
+}

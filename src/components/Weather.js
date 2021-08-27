@@ -1,6 +1,7 @@
 import React from 'react';
+import './Weather.css';
 
-function Weather({weather_svg}) {
+const Weather = ({weather_svg}) => {
     return (
         <img src={weather_svg} className="weather" alt="weather" />
       );
