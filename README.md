@@ -3,6 +3,7 @@ First project with React.
 Todo:
 - Make range input slider work in Chrome
 - disable / enable slider on button click
+- update slider with fill up color
 - add range markers like right template design
 - fetch weather data and show right symbol / temperature
 - clean up code
