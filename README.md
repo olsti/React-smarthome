@@ -1,4 +1,5 @@
 First project with React.
+
 Todo:
 - Make range input slider work in Chrome
 - disable / enable slider on button click
