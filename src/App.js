@@ -1,4 +1,11 @@
-import React, {useState} from 'react';
+import React, {
+  // Component,
+  // memo,
+  useCallback,
+  useState,
+  // useEffect,
+  useMemo
+} from "react";
 import './App.css';
 
 import ic_sun from './images/weather/ic_sun.svg';
@@ -22,8 +29,10 @@ import Temperature from './components/Temperature';
 import Daytext from './components/Daytext';
 import Buttonbox from './components/Buttonbox';
 import Slider from './components/Slider';
+import RangeSlider from "./components/RangeSlider";
 
 const App = () => {
+  //button state variables
   const [isOn1, setTurnOn1] = useState(false);
   const [isOn2, setTurnOn2] = useState(false);
   const [isOn3, setTurnOn3] = useState(false);
@@ -31,18 +40,40 @@ const App = () => {
   const [isOn5, setTurnOn5] = useState(false);
   const [isOn6, setTurnOn6] = useState(false);
   const [isOn7, setTurnOn7] = useState(false);
+
+  //rangeslider state variables
+  const [parentVal, setParentVal] = useState(0);
+
+  const sliderValueChanged = useCallback(value => {
+    //callback: value of rangeslider changed§
+    console.log("[RANGESLIDER] value changed: ", value);
+    setParentVal(value);
+  });
+
+  // config of rangeslider params
+  const rangesliderProps = useMemo(
+    () => ({
+      min: 0,
+      max: 100,
+      value: parentVal,
+      step: 2,
+      label: "Temperature Slider",
+      //assign callbackfunction 
+      onChange: e => sliderValueChanged(e)
+    }), [parentVal]);
+
   return (
     <div className="App">
       <div className="smarthome">
         <div className="grid left">
           <div className="grid topleft">
               <div className="sliderbox_upper">
-                <Slider img_src ={slider_todo}/>
-                <Slider img_src ={slider_todo}/>
-                <Slider img_src ={slider_todo}/>
-                <Slider img_src ={slider_todo}/>
-                <Slider img_src ={slider_todo}/>
-                <Slider img_src ={slider_todo}/>
+                <RangeSlider {...rangesliderProps} classes="additional-css-classes" />
+                <RangeSlider {...rangesliderProps} classes="additional-css-classes" />
+                <RangeSlider {...rangesliderProps} classes="additional-css-classes" />
+                <RangeSlider {...rangesliderProps} classes="additional-css-classes" />
+                <RangeSlider {...rangesliderProps} classes="additional-css-classes" />
+                <RangeSlider {...rangesliderProps} classes="additional-css-classes" />
                 <Slider img_src ={slider_todo}/>
               </div>
 

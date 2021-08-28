@@ -1,8 +1,9 @@
 .daytext {
   display: grid;
   align-items: center;
-  color: #fff;
-  text-shadow: 4px 4px 0 rgba(0, 0, 0, 0.1);
+  color: rgba(80, 78, 78, 0.7);
+  /* text-shadow: 1px 1px 3px rgb(105, 0, 0, 0.3); */
+  text-shadow: -1px -1px 0px rgba(212, 210, 210, 0.7);
   font-size: 14px;
   text-align: center;
   font-family: fantasy;

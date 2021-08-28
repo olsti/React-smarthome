@@ -21,7 +21,9 @@
   left: 0;
   right: 0;
   bottom: 0;
-  background-color: #3b3d42;
+  /* background-color: #3b3d42; */
+  background-color: rgba(80, 78, 78, 0.1);
+  box-shadow: -0.3px -0.3px 0px rgba(212, 210, 210, 1);
   transition: 0.4s;
   border-radius: 28px;
 }
@@ -33,7 +35,8 @@
   width: 22px;
   left: 4px;
   bottom: 4px;
-  background-color: #ccc;
+  background-color: rgba(255, 255, 255, 0.9);
+  box-shadow: 0.5px 0.5px 1px rgb(199, 197, 197);
   transition: 0.4s;
   border-radius: 50%;
 }
@@ -41,12 +44,12 @@
 input:checked + .switchslidersimple {
   transition: all 0.3s ease;
   color: #282c34;
-  background-color: lightgreen;
-  border-radius: 28px;
+  background-color: #6cdbe9;
+  border-radius: 20px;
 }
 
 input:checked + .switchslidersimple::before {
-  transform: scale(0.9);
+  transform: scale(0.95);
   outline: 2px linear-gradient(#4d4e4e, #282929);
   border-radius: 50%;
   background-color: white;
